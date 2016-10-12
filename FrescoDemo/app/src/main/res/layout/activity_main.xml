@@ -19,10 +19,9 @@
             fresco:roundBottomLeft="true"
 
             fresco:roundBottomRight="true"
-            fresco:roundWithOverlayColor="@android:color/holo_blue_bright"
             fresco:roundedCornerRadius="75dp"
             fresco:roundingBorderColor="@android:color/holo_red_light"
-            fresco:roundingBorderWidth="11dp" />
+            fresco:roundingBorderWidth="1dp" />
 
         <ImageView
             android:id="@+id/imageview_picasso"
