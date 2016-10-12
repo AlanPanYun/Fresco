@@ -13,7 +13,7 @@
         fresco:roundWithOverlayColor="@android:color/holo_blue_bright"
         fresco:roundedCornerRadius="60dp"
         fresco:roundingBorderColor="@android:color/holo_red_light"
-        fresco:roundingBorderWidth="5dp"
+        fresco:roundingBorderWidth="3dp"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_margin="@dimen/activity_horizontal_margin" />

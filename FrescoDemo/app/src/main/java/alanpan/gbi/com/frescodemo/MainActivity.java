@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        hierarchy.setActualImageScaleType(ScalingUtils.ScaleType.CENTER);
 
         sd = (SimpleDraweeView) findViewById(R.id.simple_drawee_view);
-        sd.setHierarchy(hierarchy);
+//        sd.setHierarchy(hierarchy);
 
         picasssoView = (ImageView) findViewById(R.id.imageview_picasso);
 
