@@ -111,6 +111,8 @@ public class ImageCompressUtils {
             image.compress(Bitmap.CompressFormat.JPEG,20,os);
         }
 
+        ByteArrayInputStream bi = new ByteArrayInputStream(os.toByteArray());
+        BitmapFactory.decodeStream(bi);
         FileOutputStream fi = new FileOutputStream(outPath);
         fi.write(os.toByteArray());
         fi.flush();
