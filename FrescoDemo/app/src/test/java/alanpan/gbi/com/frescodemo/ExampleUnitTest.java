@@ -1,4 +1,4 @@
-package com.gbi.alanpan.frescodemo;
+package alanpan.gbi.com.frescodemo;
 
 import org.junit.Test;
 
