@@ -79,8 +79,6 @@ public class ImageFactory {
         newOpts.inSampleSize = be;//设置缩放比例
         // 开始压缩图片，注意此时已经把options.inJustDecodeBounds 设回false了
         bitmap = BitmapFactory.decodeFile(imgPath, newOpts);
-        // 压缩好比例大小后再进行质量压缩
-//        return compress(bitmap, maxSize); // 这里再进行质量压缩的意义不大，反而耗资源，删除
         return bitmap;
     }
 
@@ -109,8 +107,8 @@ public class ImageFactory {
         newOpts.inJustDecodeBounds = false;
         int w = newOpts.outWidth;
         int h = newOpts.outHeight;
-        float hh = pixelH;// 设置高度为240f时，可以明显看到图片缩小了
-        float ww = pixelW;// 设置宽度为120f，可以明显看到图片缩小了
+        float hh = pixelH;
+        float ww = pixelW;
         //缩放比。由于是固定比例缩放，只用高或者宽其中一个数据进行计算即可
         int be = 1;//be=1表示不缩放
         if (w > h && w > ww) {//如果宽度大的话根据宽度固定大小缩放
@@ -123,8 +121,6 @@ public class ImageFactory {
         //重新读入图片，注意此时已经把options.inJustDecodeBounds 设回false了
         is = new ByteArrayInputStream(os.toByteArray());
         bitmap = BitmapFactory.decodeStream(is, null, newOpts);
-        //压缩好比例大小后再进行质量压缩
-//      return compress(bitmap, maxSize); // 这里再进行质量压缩的意义不大，反而耗资源，删除
         return bitmap;
     }
 
