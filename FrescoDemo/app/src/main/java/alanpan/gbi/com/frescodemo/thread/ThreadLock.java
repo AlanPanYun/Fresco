@@ -9,7 +9,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Created by alan.pan on 2016/10/12.
  */
-public class ThreadTest {
+public class ThreadLock {
 
 
     public void initTest(){
@@ -28,6 +28,7 @@ public class ThreadTest {
         };
 
         ReentrantLock reentrantLock = new ReentrantLock();
+
         reentrantLock.lock();
         reentrantLock.unlock();
     }
