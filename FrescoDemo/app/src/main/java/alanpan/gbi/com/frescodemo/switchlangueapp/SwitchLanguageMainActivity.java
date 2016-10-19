@@ -9,7 +9,10 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.concurrent.ExecutionException;
+
 import alanpan.gbi.com.frescodemo.R;
+import alanpan.gbi.com.frescodemo.thread.MultiThread;
 
 public class SwitchLanguageMainActivity
         extends SwitchLanguageBaseActivity
@@ -22,6 +25,13 @@ public class SwitchLanguageMainActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.switch_language_activity_main);
 
+        try {
+            MultiThread.init();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         TextView textView = (TextView) findViewById(R.id.text);
         Button button = (Button) findViewById(R.id.btn);
         Button button2 = (Button) findViewById(R.id.btn_2);
