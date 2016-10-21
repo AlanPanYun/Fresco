@@ -45,7 +45,7 @@ public class CustomViewDemo extends View{
                 case R.styleable.CustomView_titleText:
                     mTitle = typedArray.getString(attr);
                     break;
-                case R.styleable.CustomView_titleTextColor:
+                case R.styleable.CustomView_titleCustomTextColor:
                     mTitleColor = typedArray.getColor(attr, Color.BLACK);
                     break;
                 case R.styleable.CustomView_titleTextSize:

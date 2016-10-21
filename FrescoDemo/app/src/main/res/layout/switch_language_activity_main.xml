@@ -42,4 +42,22 @@
         android:layout_marginTop="15dp"
         android:text="Custom view" />
 
+    <Button
+        android:id="@+id/btn_rx_java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/btn_2"
+        android:text="btn_rx_java" />
+
+    <Button
+        android:id="@+id/btn_rxjava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/btn_rx_java"
+        android:text="rxjava" />
+
 </RelativeLayout>
