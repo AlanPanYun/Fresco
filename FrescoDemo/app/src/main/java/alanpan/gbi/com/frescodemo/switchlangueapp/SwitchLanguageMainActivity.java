@@ -22,6 +22,7 @@ public class SwitchLanguageMainActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.switch_language_activity_main);
 
+        
         TextView textView = (TextView) findViewById(R.id.text);
         Button button = (Button) findViewById(R.id.btn);
         Button button2 = (Button) findViewById(R.id.btn_2);
@@ -56,6 +57,8 @@ public class SwitchLanguageMainActivity
             }
         });
     }
+
+
 
     @Override
     public void onClick(View v) {
