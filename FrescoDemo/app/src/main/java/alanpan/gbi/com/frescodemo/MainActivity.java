@@ -26,6 +26,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import butterknife.BindView;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final String URI_ONE = "https://test.reframehealth.com/UploadedAvatar/Small/2016/201607/20160727/8cc5167d-9d85-4df3-bbad-9dc40deabf19.png";
@@ -36,8 +38,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Picasso sPicasso;
     private ImageView picasssoView;
 
+    @BindView(R.id.btn_rx_java) Button btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
