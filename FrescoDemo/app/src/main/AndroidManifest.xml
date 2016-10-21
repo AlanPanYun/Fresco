@@ -12,21 +12,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".switchlangueapp.SwitchLanguageMainActivity"
-            android:launchMode="singleInstance">
+        <activity android:name=".switchlangueapp.SwitchLanguageMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
 
         <activity android:name=".FrescoActivity" />
         <activity android:name=".PicassoActivity" />
-        <activity android:name=".switchlangueapp.SecondActivity" />
-        <activity android:name=".switchlangueapp.SwitchLanguageBaseActivity" />
+        <activity android:name=".switchlangueapp.SecondActivity"/>
+        <activity android:name=".switchlangueapp.SwitchLanguageBaseActivity"/>
 
     </application>
 
