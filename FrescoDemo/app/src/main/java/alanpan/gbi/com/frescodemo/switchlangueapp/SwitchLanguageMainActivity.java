@@ -3,25 +3,33 @@ package alanpan.gbi.com.frescodemo.switchlangueapp;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import alanpan.gbi.com.frescodemo.R;
+import alanpan.gbi.com.frescodemo.rxjava.RxJavaDemo;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class SwitchLanguageMainActivity
         extends SwitchLanguageBaseActivity
         implements OnClickListener {
 
     private Dialog mDialog;
+    @BindView(R.id.btn_rx_java)
+    Button btnRxJava;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.switch_language_activity_main);
-
+        ButterKnife.bind(this);
         TextView textView = (TextView) findViewById(R.id.text);
         Button button = (Button) findViewById(R.id.btn);
         Button button2 = (Button) findViewById(R.id.btn_2);
@@ -51,10 +59,24 @@ public class SwitchLanguageMainActivity
 
             @Override
             public void onClick(View v) {
+                Toast.makeText(SwitchLanguageMainActivity.this, "hahahhaa", Toast.LENGTH_SHORT).show();
                 Intent it = new Intent(SwitchLanguageMainActivity.this, SecondActivity.class);
                 startActivity(it);
             }
         });
+    }
+
+    @OnClick(R.id.btn_rx_java)
+    public void btnRxJava() {
+        Toast.makeText(this, "hahahhaa", Toast.LENGTH_SHORT).show();
+        Log.i("alan", "butterknife");
+
+    }
+
+    @OnClick(R.id.btn_rxjava)
+    public void showToast(){
+        RxJavaDemo.returbList(this);
+        Log.i("alan","num sort test");
     }
 
     @Override
