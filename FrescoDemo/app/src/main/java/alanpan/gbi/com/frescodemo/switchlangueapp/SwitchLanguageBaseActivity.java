@@ -7,7 +7,9 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 
-public class SwitchLanguageBaseActivity extends Activity {
+import alanpan.gbi.com.frescodemo.BaseCompatActivity;
+
+public class SwitchLanguageBaseActivity extends BaseCompatActivity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
