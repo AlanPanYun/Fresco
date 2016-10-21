@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import alanpan.gbi.com.frescodemo.R;
 
+
 public class SwitchLanguageMainActivity
         extends SwitchLanguageBaseActivity
         implements OnClickListener {

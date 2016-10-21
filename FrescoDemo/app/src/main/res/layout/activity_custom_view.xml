@@ -8,7 +8,6 @@
     <alanpan.gbi.com.frescodemo.custonview.CustomViewDemo
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:titleText="faf"
-        app:titleTextColor="#00f" />
+        app:titleText="faf" />
 
 </LinearLayout>
