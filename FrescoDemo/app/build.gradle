@@ -1,10 +1,15 @@
 apply plugin: 'com.android.application'
 apply plugin: 'realm-android'
 apply plugin: 'android-apt'
+apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.0"
+
+    dataBinding {
+        enabled = true
+    }
 
     defaultConfig {
         applicationId "alanpan.gbi.com.frescodemo"
@@ -22,6 +27,12 @@ android {
     lintOptions {
         abortOnError false
     }
+
+    greendao {
+        schemaVersion 1
+        daoPackage 'alanpan.gbi.com.frescodemo.greendao'
+        targetGenDir 'src/main/java'
+    }
 }
 
 dependencies {
@@ -36,4 +47,6 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.0.1'
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile'org.greenrobot:greendao:3.0.1'
+    compile'org.greenrobot:greendao-generator:3.0.0'
 }

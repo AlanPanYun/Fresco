@@ -15,7 +15,7 @@ public class SparryArrayDemo {
         stringSparseArray.get(5);
 
         for (int i = 0; i < 5; i++) {
-            stringSparseArray.append();
+            stringSparseArray.append(i,"pp");
         }
         int i = stringSparseArray.keyAt(4);
 

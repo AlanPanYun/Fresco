@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
-    <attr name="titleText" format="string"/>
-    <attr name="titleCustomTextColor" format="color"/>
-    <attr name="titleTextSize" format="dimension"/>
+
+    <attr name="titleText" format="string" />
+    <attr name="titleCustomTextColor" format="color" />
+    <attr name="titleTextSize" format="dimension" />
 
     <declare-styleable name="CustomView">
-        <attr name="titleText"/>
-        <attr name="titleCustomTextColor"/>
-        <attr name="titleTextSize"/>
-
-        
+        <attr name="titleText" />
+        <attr name="titleCustomTextColor" />
+        <attr name="titleTextSize" />
     </declare-styleable>
-    
+
+    <declare-styleable name="CircleView">
+        <attr name="fristColor" format="color" />
+        <attr name="secondColor" format="color" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="spead" format="integer" />
+    </declare-styleable>
+
 </resources>
