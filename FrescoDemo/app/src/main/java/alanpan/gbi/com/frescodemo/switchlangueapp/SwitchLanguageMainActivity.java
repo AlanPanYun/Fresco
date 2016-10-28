@@ -11,7 +11,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import alanpan.gbi.com.frescodemo.custonview.CustomViewActiivty;
+import alanpan.gbi.com.frescodemo.R;
+import alanpan.gbi.com.frescodemo.customview.CustomViewActiivty;
+import alanpan.gbi.com.frescodemo.databinding.DataBindingActivity;
 import alanpan.gbi.com.frescodemo.rxjava.RxJavaDemo;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -72,18 +74,28 @@ public class SwitchLanguageMainActivity
     public void btnRxJava() {
         Toast.makeText(this, "hahahhaa", Toast.LENGTH_SHORT).show();
         Log.i("alan", "butterknife");
-
     }
 
     @OnClick(R.id.btn_rxjava)
-    public void showToast(){
+    public void showToast() {
         RxJavaDemo.returbList(this);
-        Log.i("alan","num sort test");
+        Log.i("alan", "num sort test");
     }
 
     @OnClick(R.id.btn_custom)
-    public void customViewTo(){
+    public void customViewTo() {
         Intent intent = new Intent(this, CustomViewActiivty.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_databingding)
+    public void clickDatabinding() {
+
+//        GreenDaoActivity.initGreeDao();
+//        Intent intent = new Intent(this, DataBindingActivity.class);
+//        startActivity(intent);
+
+        Intent intent = new Intent(this,CustomViewActiivty.class);
         startActivity(intent);
     }
 

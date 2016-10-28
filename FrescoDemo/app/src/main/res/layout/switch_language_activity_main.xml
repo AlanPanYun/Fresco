@@ -30,16 +30,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
         android:text="@string/jump" />
 
     <Button
         android:id="@+id/btn_custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn"
+        android:layout_below="@+id/btn_2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
         android:text="Custom view" />
 
     <Button
@@ -47,8 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/btn_2"
+        android:layout_below="@+id/btn_custom"
         android:text="btn_rx_java" />
 
     <Button
@@ -56,8 +53,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
         android:layout_below="@+id/btn_rx_java"
         android:text="rxjava" />
+
+    <Button
+        android:id="@+id/btn_databingding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_rxjava"
+        android:text="Custom view" />
 
 </RelativeLayout>

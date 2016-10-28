@@ -1,4 +1,4 @@
-package alanpan.gbi.com.frescodemo.custonview;
+package alanpan.gbi.com.frescodemo.customview;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

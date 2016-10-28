@@ -24,7 +24,8 @@
         <activity android:name=".PicassoActivity" />
         <activity android:name=".switchlangueapp.SecondActivity"/>
         <activity android:name=".switchlangueapp.SwitchLanguageBaseActivity"/>
-        <activity android:name=".custonview.CustomViewActiivty"/>
+        <activity android:name=".customview.CustomViewActiivty"/>
+        <activity android:name=".databinding.DataBindingActivity"/>
 
     </application>
 
